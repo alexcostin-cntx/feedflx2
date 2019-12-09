@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>feed flex test</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="banner">I know this has many bugs, I'm working on it :)</div>
+    <div class="container">
+        <section class="left">
+            <table>
+                <tr style="text-align: left;">
+                    <th>Platform Metadata</th>
+                    <th style="min-width: 240px">Mapped MEtadata</th>
+                    <th style="min-width: 34px"></th>
+                </tr>
+                <tr>
+                    <td>Title*</td>
+                    <td class="receive" data-platform-tag="1"> 
+                        <div class="drag-pill empty"  data-view="true">
+                            <svg class="icon light-gray">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Drag here</span>
+                        </div>
+                    </td>
+                    <td class="actions">
+                        <button class="menu" onclick="toggleMenu(this)">
+                            <svg class="icon accent">
+                                <use xlink:href="#menu"></use>
+                            </svg>
+                        </button>
+                        <div class="menu-body" style="display:none">
+                            <span><button onclick="clearRow(this)">Clear</button></span>
+                            <span><button>another</button></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Video URL</td>
+                    <td class="receive" data-platform-tag="2">
+                        <div class="drag-pill empty"  data-view="true">
+                            <svg class="icon light-gray">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Drag here</span>
+                        </div>
+                    </td>
+                    <td class="actions">
+                        <button class="menu" onclick="toggleMenu(this)">
+                            <svg class="icon accent">
+                                <use xlink:href="#menu"></use>
+                            </svg>
+                        </button>
+                        <div class="menu-body" style="display:none">
+                            <span><button>Clear</button></span>
+                            <span><button>another</button></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td class="receive" data-platform-tag="3">
+                        <div class="drag-pill empty"  data-view="true">
+                            <svg class="icon light-gray">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Drag here</span>
+                        </div>
+                    </td>
+                    <td class="actions">
+                        <button class="menu" onclick="toggleMenu(this)">
+                            <svg class="icon accent">
+                                <use xlink:href="#menu"></use>
+                            </svg>
+                        </button>
+                        <div class="menu-body" style="display:none">
+                            <span><button>Clear</button></span>
+                            <span><button>another</button></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Source Item ID</td>
+                    <td class="receive" data-platform-tag="4">
+                        <div class="drag-pill empty"  data-view="true">
+                            <svg class="icon light-gray">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Drag here</span>
+                        </div>
+                    </td>
+                    <td class="actions">
+                        <button class="menu" onclick="toggleMenu(this)">
+                            <svg class="icon accent">
+                                <use xlink:href="#menu"></use>
+                            </svg>
+                        </button>
+                        <div class="menu-body" style="display:none">
+                            <span><button>Clear</button></span>
+                            <span><button>another</button></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Click URL</td>
+                    <td class="receive" data-platform-tag="5">
+                        <div class="drag-pill empty"  data-view="true">
+                            <svg class="icon light-gray">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Drag here</span>
+                        </div>
+                    </td>
+                    <td class="actions">
+                        <button class="menu" onclick="toggleMenu(this)">
+                            <svg class="icon accent">
+                                <use xlink:href="#menu"></use>
+                            </svg>
+                        </button>
+                        <div class="menu-body" style="display:none">
+                            <span><button>Clear</button></span>
+                            <span><button>another</button></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Image URL</td>
+                    <td class="receive" data-platform-tag="6"> 
+                        <div class="drag-pill empty"  data-view="true">
+                            <svg class="icon light-gray">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Drag here</span>
+                        </div>
+                    </td>
+                    <td class="actions">
+                        <button class="menu" onclick="toggleMenu(this)">
+                            <svg class="icon accent">
+                                <use xlink:href="#menu"></use>
+                            </svg>
+                        </button>
+                        <div class="menu-body" style="display:none">
+                            <span><button>Clear</button></span>
+                            <span><button>another</button></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td class="receive" data-platform-tag="7">
+                        <div class="drag-pill empty"  data-view="true">
+                            <svg class="icon light-gray">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Drag here</span>
+                        </div>
+                    </td>
+                    <td class="actions">
+                        <button class="menu" onclick="toggleMenu(this)">
+                            <svg class="icon accent">
+                                <use xlink:href="#menu"></use>
+                            </svg>
+                        </button>
+                        <div class="menu-body" style="display:none">
+                            <span><button>Clear</button></span>
+                            <span><button>another</button></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Keywords</td>
+                    <td class="receive" data-platform-tag="8">
+                        <div class="drag-pill empty"  data-view="true">
+                            <svg class="icon light-gray">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Drag here</span>
+                        </div>
+                    </td>
+                    <td class="actions">
+                        <button class="menu" onclick="toggleMenu(this)">
+                            <svg class="icon accent">
+                                <use xlink:href="#menu"></use>
+                            </svg>
+                        </button>
+                        <div class="menu-body" style="display:none">
+                            <span><button>Clear</button></span>
+                            <span><button>another</button></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Captions</td>
+                    <td class="receive" data-platform-tag="9">
+                        <div class="drag-pill empty"  data-view="true">
+                            <svg class="icon light-gray">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Drag here</span>
+                        </div>
+                    </td>
+                    <td class="actions">
+                        <button class="menu" onclick="toggleMenu(this)">
+                            <svg class="icon accent">
+                                <use xlink:href="#menu"></use>
+                            </svg>
+                        </button>
+                        <div class="menu-body" style="display:none">
+                            <span><button>Clear</button></span>
+                            <span><button>another</button></span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section class="right">
+            <div class="parsed">
+                <div class="">
+                    <table>
+                        <tr style="text-align: left;">
+                            <th>Parsed Tags</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tag first">
+                    <code><code>&lttitle&gt </code>
+                        <div draggable="true" class="drag-pill full">
+                            <svg class="icon medaccent">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Content</span>
+                        </div>
+                        &lt/title&gt 
+                    </code>
+                </div>
+                <div class="tag">
+                    <code><code>&ltlink&gt </code>
+                        <div draggable="true" class="drag-pill full">
+                            <svg class="icon medaccent">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Content</span>
+                        </div>
+                        &lt/link&gt 
+                    </code>
+                </div>
+                <div class="tag">
+                    <code ><code>&ltpubDate&gt </code>
+                        <div draggable="true" class="drag-pill full">
+                            <svg class="icon medaccent">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Content</span>
+                        </div>
+                        &lt/pubDate&gt 
+                    </code>
+                </div>
+                <div class="tag">
+                    <code ><code>&ltguid&gt </code>
+                        <div draggable="true" class="drag-pill full">
+                            <svg class="icon medaccent">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Content</span>
+                        </div>
+                        &lt/guid&gt 
+                    </code>
+                </div>
+                <div class="tag">
+                    <code ><code>&ltdescription&gt </code>
+                        <div draggable="true" class="drag-pill full">
+                            <svg class="icon medaccent">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Content</span>
+                        </div>
+                        &lt/description&gt 
+                    </code>
+                </div>
+                <div class="tag">
+                    <code><code>&ltmedia:group&gt</code>
+                    </code>
+                </div>
+                <div class="tag nested level1 first">
+                    <code ><code>&ltmedia:title&gt </code>
+                        <div draggable="true" class="drag-pill full">
+                            <svg class="icon medaccent">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Content</span>
+                        </div>
+                        &lt/media:title&gt 
+                    </code>
+                </div>
+                <div class="tag nested level1">
+                    <code ><code>&ltmedia:description&gt </code>
+                        <div draggable="true" class="drag-pill full">
+                            <svg class="icon medaccent">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Content</span>
+                        </div>
+                        &lt/media:description&gt 
+                    </code>
+                </div>
+                <div data-atrlist data-multitag class="tag nested level1">
+                    <span class="counter">8x</span>
+                    <code><code>&ltmedia:content</code>
+                        <button data-target="a1" class="drag-pill atributes">
+                            <span>Atributes</span>
+                            <svg class="icon accent">
+                                <use xlink:href="#caret"></use>
+                            </svg>
+                        </button>
+                        /&gt 
+                    </code>
+                    <div class="fl-break"></div>
+                    <section id="a1" class="attr-list">
+                        <ul>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>type</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>medium</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>bitrate</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>framerate</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>duration</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>width</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>height</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>lang</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>url</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section> 
+                </div>
+                <div  data-atrlist data-multitag  class="tag nested level1">
+                    <span class="counter">12x</span>
+                    <code><code>&ltmedia:thumbnail</code>
+                        <button  data-target="a2" class="drag-pill atributes">
+                            <span>Atributes</span>
+                            <svg class="icon accent">
+                                <use xlink:href="#caret"></use>
+                            </svg>
+                        </button>
+                        /&gt 
+                    </code>
+                    <div class="fl-break"></div>
+                    <section id="a2" class="attr-list">
+                        <ul>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>type</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>medium</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>bitrate</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>framerate</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>duration</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>width</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>height</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>lang</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>url</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section> 
+                </div>
+                <div data-atrlist data-multitag   class="tag nested level1">
+                    <span class="counter">6x</span>
+                    <code ><code>&ltmedia:category</code>
+                        <button   data-target="a3" class="drag-pill atributes">
+                            <span>Atributes</span>
+                            <svg class="icon accent">
+                                <use xlink:href="#caret"></use>
+                            </svg>
+                        </button>
+                        &gt 
+                        <div draggable="true" class="drag-pill full">
+                            <svg class="icon medaccent">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Content</span>
+                        </div>
+                        &lt/media:category&gt
+                    </code>
+                    <div class="fl-break"></div>
+                    <section id="a3" class="attr-list">
+                        <ul>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>type</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>medium</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>bitrate</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>framerate</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>duration</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>width</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>height</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>lang</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>url</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section> 
+                </div>
+                <div  data-atrlist data-multitag  class="tag nested level1">
+                    <span class="counter">2x</span>
+                    <code><code>&ltmedia:credit</code>
+                        <button   data-target="a4" class="drag-pill atributes">
+                            <span>Atributes</span>
+                            <svg class="icon accent">
+                                <use xlink:href="#caret"></use>
+                            </svg>
+                        </button>
+                        &gt 
+                        <div draggable="true" class="drag-pill full">
+                            <svg class="icon medaccent">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Content</span>
+                        </div>
+                        &lt/media:credit&gt
+                    </code>
+                    <div class="fl-break"></div>
+                    <section id="a4" class="attr-list">
+                        <ul>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>type</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>medium</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>bitrate</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>framerate</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>duration</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>width</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>height</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>lang</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div draggable="true" class="drag-pill full">
+                                    <svg class="icon medaccent">
+                                        <use xlink:href="#drag"></use>
+                                    </svg>
+                                    <span>url</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section> 
+                </div>
+                <div class="tag nested level1">
+                    <code><code>&ltmedia:copyright&gt </code>
+                        <div draggable="true" class="drag-pill full">
+                            <svg class="icon medaccent">
+                                <use xlink:href="#drag"></use>
+                            </svg>
+                            <span>Content</span>
+                        </div>
+                        &lt/media:copyright&gt 
+                    </code>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div id="modal-backdrop" class="modal" style="display: none">
+        <div class="modal-content" data-from=" ">
+            <form>
+                <p>There are 12 tags: media:thumbnail
+                    with the attribute: url</p>
+                    <p><label for="choose1">Atribute</label>
+                        <select id="choose1" name="i_like">
+                            <option>-select-</option>
+                            
+                        </select> 
+                    </p>
+                    <p>
+                        <label for="choose2">Would you prefer a banana or cherry?</label>
+                        <select id="choose2" name="i_like">
+                            <option>Equals</option>
+                            <option>contains</option>
+                        </select> 
+                    </p>
+                    <p>
+                        <label for="choose3">Would you prefer a banana or cherry?</label>
+                        <select id="choose3" name="i_like">
+                            <option>-select-</option>
+                            <option>320</option>
+                            <option>640</option>
+                            <option>1024</option>
+                        </select> 
+                    </p>
+                    <input type="button" id="submitFormData" onclick="closeModal()" value="Submit" />
+                </form>
+                <button class="close" onclick="closeModal()">close</button>
+            </div>
+        </div>
+        
+        <div class="display-none">
+            <div class="details">
+                <div><span class="tagsinfo">tagname </span><span class="local-attribute"> - Attibute</span></div>
+                <section class="filter">
+                    <button class="link" onclick="showModal()">filter undefined</button>
+                </section>
+            </div>
+            
+            <svg>
+                <defs>
+                    <g id="menu" stroke="none" stroke-width="1" fill-rule="evenodd">
+                        <path d="M12,8 C13.1,8 14,7.1 14,6 C14,4.9 13.1,4 12,4 C10.9,4 10,4.9 10,6 C10,7.1 10.9,8 12,8 Z" ></path>
+                        <path d="M12,10 C10.9,10 10,10.9 10,12 C10,13.1 10.9,14 12,14 C13.1,14 14,13.1 14,12 C14,10.9 13.1,10 12,10 Z" ></path>
+                        <path d="M12,16 C10.9,16 10,16.9 10,18 C10,19.1 10.9,20 12,20 C13.1,20 14,19.1 14,18 C14,16.9 13.1,16 12,16 Z" ></path>
+                    </g>
+                    <g id="drag" stroke="none" stroke-width="1" fill-rule="evenodd">
+                        <path d="M11,18 C11,19.1 10.1,20 9,20 C7.9,20 7,19.1 7,18 C7,16.9 7.9,16 9,16 C10.1,16 11,16.9 11,18 Z" ></path>
+                        <path d="M9,10 C7.9,10 7,10.9 7,12 C7,13.1 7.9,14 9,14 C10.1,14 11,13.1 11,12 C11,10.9 10.1,10 9,10 Z" ></path>
+                        <path d="M9,4 C7.9,4 7,4.9 7,6 C7,7.1 7.9,8 9,8 C10.1,8 11,7.1 11,6 C11,4.9 10.1,4 9,4 Z" ></path>
+                        <path d="M15,8 C16.1,8 17,7.1 17,6 C17,4.9 16.1,4 15,4 C13.9,4 13,4.9 13,6 C13,7.1 13.9,8 15,8 Z" ></path>
+                        <path d="M15,10 C13.9,10 13,10.9 13,12 C13,13.1 13.9,14 15,14 C16.1,14 17,13.1 17,12 C17,10.9 16.1,10 15,10 Z" ></path>
+                        <path d="M15,16 C13.9,16 13,16.9 13,18 C13,19.1 13.9,20 15,20 C16.1,20 17,19.1 17,18 C17,16.9 16.1,16 15,16 Z" ></path>
+                    </g>
+                    <g id="caret" stroke="none" stroke-width="1"  fill-rule="evenodd">
+                        <polygon  points="16.59 8.59 12 13.17 7.41 8.59 6 10 12 16 18 10"></polygon>
+                    </g>
+                    <g id="close" stroke="none" stroke-width="1"  fill-rule="evenodd">
+                        <polygon points="18 8.10785714 16.8921429 7 12.5 11.3921429 8.10785714 7 7 8.10785714 11.3921429 12.5 7 16.8921429 8.10785714 18 12.5 13.6078571 16.8921429 18 18 16.8921429 13.6078571 12.5"></polygon>
+                    </g>
+                </defs>
+            </svg>
+        </div>
+        
+    </body>
+    <script src="script.js"></script>
+    </html>
